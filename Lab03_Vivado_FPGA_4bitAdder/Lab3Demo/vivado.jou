@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Apr 11 19:00:11 2020
+# Process ID: 10144
+# Current directory: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8292 C:\Users\chihyu\Desktop\Lab3\½Ò°ó½d¨Ò\Lab3Demo\Lab3Demo.xpr
+# Log file: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo/vivado.log
+# Journal file: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo/Lab3Demo.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server

@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Apr 11 19:00:11 2020
+# Process ID: 10144
+# Current directory: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8292 C:\Users\chihyu\Desktop\Lab3\½Ò°ó½d¨Ò\Lab3Demo\Lab3Demo.xpr
+# Log file: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo/vivado.log
+# Journal file: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo/Lab3Demo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/chihyu/Desktop/Lab3/Lab3Demo' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/½Ò°ó½d¨Ò/top.v'; using path 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/top.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/½Ò°ó½d¨Ò/Nexys-4-DDR-Master.xdc'; using path 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Nexys-4-DDR-Master.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/½Ò°ó½d¨Ò/top.v'; using path 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/top.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/½Ò°ó½d¨Ò/Nexys-4-DDR-Master.xdc'; using path 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Nexys-4-DDR-Master.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/½Ò°ó½d¨Ò/top.v'; using path 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/top.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/½Ò°ó½d¨Ò/Nexys-4-DDR-Master.xdc'; using path 'C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Nexys-4-DDR-Master.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 821.234 ; gain = 68.426
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Apr 11 19:01:07 2020] Launched impl_1...
+Run output will be captured here: C:/Users/chihyu/Desktop/Lab3/½Ò°ó½d¨Ò/Lab3Demo/Lab3Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.3
+  **** Build date : Oct  4 2017-20:12:17
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292743156A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 19:09:36 2020...

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Apr 11 20:40:50 2020
+# Process ID: 15748
+# Current directory: C:/Users/chihyu/Desktop/Lab3HW/Lab3HW.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/chihyu/Desktop/Lab3HW/Lab3HW.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/chihyu/Desktop/Lab3HW/Lab3HW.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/chihyu/Desktop/Lab3HW/Lab3HW.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/chihyu/Desktop/Lab3HW/Lab3HW.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 11 20:40:52 2020...
