@@ -16,7 +16,7 @@ module testbench;
     wire [63:0] sum;
     wire cout;
 
-    CLA_64bit Import_CLA(in_a,in_b,cin,sum,cout);
+    CLA_64bit Import_CLA(in_a, in_b, cin, sum, cout);
 
 	initial begin
 
@@ -32,7 +32,7 @@ module testbench;
         #10 rst = 1;
         #20 rst = 0;
 
-        for (idx = 1;idx < 10;idx=idx+1) begin
+        for (idx = 1; idx < 10; idx = idx + 1) begin
             #200 rst = 1;
             #20 rst = 0;
         end
@@ -47,20 +47,19 @@ module testbench;
     always @(posedge clk or posedge rst) begin
 
         if (rst) begin
-            in_a <= {$random}*{$random}*{$random}*{$random};
-            in_b <= {$random}*{$random}*{$random}*{$random};
-            cin <= {$random}%2;           
+            in_a <= {$random} * {$random} * {$random} * {$random};
+            in_b <= {$random} * {$random} * {$random} * {$random};
+            cin <= {$random} % 2;           
             correct_ans <= 0;
             write <= 0;
 
         end else begin
-            correct_ans <= {in_a[63:32],4'b1111,in_a[27:4],4'b1111} + {in_b[63:32],4'b1111,in_b[27:4],4'b1111} + cin;
+            correct_ans <= {in_a[63:32], 4'b1111, in_a[27:4], 4'b1111} + 
+                           {in_b[63:32], 4'b1111, in_b[27:4], 4'b1111} + cin;
             write <= write + 1;
 
             if (write == 9) begin
-                
                 if ({cout,sum} == correct_ans) begin
-
                     correct_ct <= correct_ct + 1;
                     $display ("/////////////////////////////Test %d/////////////////////////////", idx);
                     $display ("//  Q :%d + %d + %d = ?     //", in_a, in_b , cin);

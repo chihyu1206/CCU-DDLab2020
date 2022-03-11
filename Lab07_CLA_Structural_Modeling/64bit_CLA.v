@@ -1,5 +1,6 @@
 `timescale 1ns/1ps
-module CLA_64bit(ina,inb,cin,sum,cout);
+
+module CLA_64bit(ina, inb, cin, sum, cout);
     input  [63:0] ina,inb;
     input cin;
     output [63:0] sum;
@@ -105,8 +106,8 @@ module gp_generator(a,b,g,p);
 
 endmodule
 
-module carry_generator(g,p,cin,c,gG,gP,cout);
-
+module carry_generator(g, p, cin, c, gG, gP, cout);
+    
     input [3:0] g,p;
     input cin;
     output gG,gP;
@@ -128,7 +129,7 @@ module carry_generator(g,p,cin,c,gG,gP,cout);
 
 endmodule
 
-module sum_geneator(a,b,c,sum);
+module sum_geneator(a, b, c, sum);
 
     input [63:0] a,b;
     input [63:0] c;
